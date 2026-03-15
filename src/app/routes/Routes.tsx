@@ -43,7 +43,7 @@ export const routes: RouteObject[] = [
         element: <HomePage />,
       },
       ...Object.values(Category).map(cat => ({
-        path: cat,
+        path: cat as string,
         element: <CategoriesPage category={cat} />,
       })),
       {
