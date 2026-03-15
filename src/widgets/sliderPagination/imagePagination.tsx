@@ -3,7 +3,7 @@ import { usePagination } from './model/usePagination';
 import styles from './styles/sliderPagination.module.scss';
 import classNames from 'classnames';
 import { LoaderSpinner } from '@ui/skeletons';
-import { LoadStatus } from '@shared/api';
+import { UILoadStatus } from '@features/index';
 
 type ImagePaginationProps = {
   setByIndex: (idx: number) => void;
@@ -11,7 +11,7 @@ type ImagePaginationProps = {
 };
 
 type Props = {
-  data: ImagePaginationProps | LoadStatus;
+  data: ImagePaginationProps | UILoadStatus;
 };
 
 const FALLBACK_AMOUNT = 4;

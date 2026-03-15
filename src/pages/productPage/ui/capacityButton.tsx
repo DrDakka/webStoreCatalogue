@@ -4,7 +4,7 @@ import { useNavigationTracker } from '@features/index';
 import { CapacityButtonConfig } from '../model';
 import { Link } from 'react-router-dom';
 import classNames from 'classnames';
-import { LoadStatus } from '@shared/api';
+import { UILoadStatus } from '@features/index';
 
 type Props = {
   to: string;
@@ -19,7 +19,7 @@ const baseConfig: CapacityButtonConfig = {
   onClick: (e: React.MouseEvent) => e.preventDefault(),
 };
 
-export const CapacityButton = ({ data }: { data: Props | LoadStatus }) => {
+export const CapacityButton = ({ data }: { data: Props | UILoadStatus }) => {
   const { preserveFrom } = useNavigationTracker();
 
   const text = typeof data === 'string' ? '----GB' : data.value;

@@ -1,4 +1,4 @@
-import { LoadStatus } from '@shared/api';
+import { UILoadStatus } from '@features/index';
 import { Conf, ProductProps } from '.';
 
 const apiToUiMapper = {
@@ -31,7 +31,7 @@ const baseConf: Conf = {
 };
 
 export const organizeProps = (
-  data: ProductProps | LoadStatus,
+  data: ProductProps | UILoadStatus,
   trackLinkHandler: (e: React.MouseEvent, path: string) => void,
 ): Conf => {
   if (typeof data === 'string') {

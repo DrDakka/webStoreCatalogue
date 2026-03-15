@@ -6,10 +6,10 @@ import { DetailedList } from '@ui/index';
 import { ProductProps, organizeProps } from './model';
 import { LoaderSpinner } from '@ui/skeletons';
 import { CardButtons } from './ui/cardButtons';
-import { LoadStatus } from '@shared/api';
+import { UILoadStatus } from '@features/index';
 
 type Props = {
-  data: ProductProps | LoadStatus;
+  data: ProductProps | UILoadStatus;
   lazy: boolean;
 };
 

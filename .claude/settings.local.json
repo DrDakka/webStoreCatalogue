@@ -19,7 +19,9 @@
       "Bash(/home/drdakka/.nvm/versions/node/v24.13.0/bin/npm install:*)",
       "Bash(NODE=/home/drdakka/.nvm/versions/node/v24.13.0/bin/node NPM=/home/drdakka/.nvm/versions/node/v24.13.0/bin/npm)",
       "Bash(PATH=\"/home/drdakka/.nvm/versions/node/v24.13.0/bin:$PATH\" npm install --save-dev vitest @vitest/coverage-v8 @testing-library/react @testing-library/jest-dom @testing-library/user-event jsdom)",
-      "Bash(PATH=\"/home/drdakka/.nvm/versions/node/v24.13.0/bin:$PATH\" npx vitest run)"
+      "Bash(PATH=\"/home/drdakka/.nvm/versions/node/v24.13.0/bin:$PATH\" npx vitest run)",
+      "Bash(git remote:*)",
+      "Bash(PATH=\"/home/drdakka/.nvm/versions/node/v24.13.0/bin:$PATH\" npm run build)"
     ]
   }
 }
