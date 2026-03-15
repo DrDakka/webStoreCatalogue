@@ -1,11 +1,11 @@
 @use '@shared/styles' as s;
 
 .container {
-  @include s.page-layout;
-
   scrollbar-width: none;
   display: flex;
   flex-direction: column;
+
+  @include s.page-layout;
 }
 
 .complete {

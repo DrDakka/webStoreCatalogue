@@ -5,10 +5,13 @@ import { Steps } from './checkoutSteps/Steps';
 import { DeliveryForm } from './deliveryForm/DeliveryForm';
 import { useGlobalData } from '@features/index';
 import { CheckoutResume } from './checkoutResume/CheckoutResume';
+import { useScrollLock } from '@shared/lib';
 import classNames from 'classnames';
 
 export const ModalCheckout = () => {
   const { modalIsOpened } = useGlobalData();
+
+  useScrollLock(modalIsOpened);
 
   return (
     <div

@@ -98,10 +98,9 @@
   display: flex;
   grid-area: 2 / 3 / 3 / 4;
   justify-self: end;
+  color: s.$c-grey-primary;
 
   @include s.t-h3;
-
-  color: s.$c-grey-primary;
 }
 
 @media(min-width: s.$c-BREAKPOINT_TAB) {

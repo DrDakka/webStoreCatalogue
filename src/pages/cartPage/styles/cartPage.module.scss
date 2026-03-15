@@ -1,20 +1,20 @@
 @use '@shared/styles' as s;
 
 .layout-container {
-  @include s.page-layout;
-
   display: flex;
   flex-direction: column;
   position: relative;
   width: 100%;
   height: 100%;
   z-index: s.$c-regular;
+
+  @include s.page-layout;
 }
 
 h1 {
-  @include s.t-h1;
-
   color: s.$c-grey-primary;
+
+  @include s.t-h1;
 }
 
 .cart-list {

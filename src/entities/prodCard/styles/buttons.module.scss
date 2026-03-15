@@ -18,18 +18,18 @@
 }
 
 .cart-button {
-  @include s.m-btn-btn-blc;
-
   height: 40px;
+
+  @include s.m-btn-btn-blc;
 
   &:hover {
     @include s.m-btn-hover-black;
   }
 
   &__active {
-    @include s.m-btn-btn-reg;
-
     color: s.$c-green;
+
+    @include s.m-btn-btn-reg;
 
     &:hover {
       @include s.m-btn-hover-reg;

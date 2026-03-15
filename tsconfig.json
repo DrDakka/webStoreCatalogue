@@ -1,11 +1,27 @@
 {
-  "extends": "@mate-academy/students-ts-config",
-  "include": [
-    "src"
-  ],
   "compilerOptions": {
+    "target": "ES2017",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
     "sourceMap": false,
-    "types": ["node", "cypress"],
+    "declaration": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "experimentalDecorators": true,
+    "noFallthroughCasesInSwitch": true,
+    "types": ["node"],
     "baseUrl": ".",
     "paths": {
       "@app/*":       ["src/app/*"],
@@ -15,7 +31,9 @@
       "@widgets/*":   ["src/widgets/*"],
       "@features/*":  ["src/features/*"],
       "@server/*":    ["src/serverMock/*"],
-      "@pages/*":     ["src/pages/*"],
+      "@pages/*":     ["src/pages/*"]
     }
-  }
+  },
+  "include": ["src"],
+  "exclude": ["node_modules"]
 }

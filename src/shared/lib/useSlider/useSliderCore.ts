@@ -1,4 +1,3 @@
-/* eslint-disable react-hooks/exhaustive-deps */
 import { useEffect, useLayoutEffect, useRef } from 'react';
 import { useSliderUtils } from './useSliderUtils';
 import { useAnimation } from './useAnimation';
@@ -27,6 +26,8 @@ export const useSliderCore = (
       snap(startIndex, false);
       initialSetup.current = true;
     }
+  // snap и updateSizes работают исключительно через refs — стабильны между рендерами
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [DOM.item, DOM.viewport, DOM.track, amount]);
 
   const setByIndex = (idx: number, clamped: boolean = false) => {
@@ -119,6 +120,8 @@ export const useSliderCore = (
     return () => {
       resizeObserver.disconnect();
     };
+  // ResizeObserver захватывает snap и updateSizes через замыкание — они стабильны (только refs)
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [DOM.viewport]);
 
   return { handlers, setByIndex };

@@ -1,11 +1,10 @@
 @use '@shared/styles' as s;
 
 @mixin form-legend {
-  @include s.t-h4;
-
   color: s.$c-grey-primary;
-
   text-transform: capitalize;
+
+  @include s.t-h4;
 }
 
 @mixin input-label {

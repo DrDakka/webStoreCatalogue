@@ -1,3 +1,4 @@
+/// <reference types="vitest" />
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import path from 'node:path';
@@ -17,5 +18,10 @@ const alias = {
 export default defineConfig({
   plugins: [react()],
   resolve: { alias },
-  base: '/react_phone-catalog/',
+  base: '/webStoreCatalogue/',
+  test: {
+    environment: 'jsdom',
+    globals: true,
+    setupFiles: './src/test-setup.ts',
+  },
 })

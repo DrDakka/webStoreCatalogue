@@ -31,10 +31,10 @@
 }
 
 .h1 {
-  @include s.t-h1;
-
   margin-bottom: 8px;
   text-transform: capitalize;
+
+  @include s.t-h1;
 }
 
 .models {

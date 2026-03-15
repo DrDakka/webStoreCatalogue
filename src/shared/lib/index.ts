@@ -6,3 +6,4 @@ export {
   useSliderData,
   SliderDataProvider,
 } from './useSlider';
+export { useScrollLock } from './useScrollLock/useScrollLock';

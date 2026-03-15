@@ -13,6 +13,11 @@
     border-color: s.$c-grey-secondary;
   }
 
+  &:has(select:user-invalid) {
+    border-color: s.$c-red;
+    box-shadow: inset 0 0 0 1px s.$c-red;
+  }
+
   > select {
     border: none;
     padding: 0 15px;

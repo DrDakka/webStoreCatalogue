@@ -33,9 +33,11 @@
   &__name {
     @include s.t-h4;
 
-    grid-row: 3;
-    font-size: s.$c-mid !important;
-    line-height: 26px;
+    & {
+      grid-row: 3;
+      font-size: s.$c-mid !important;
+      line-height: 26px;
+    }
   }
 
   &__amount {

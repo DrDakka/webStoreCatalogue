@@ -1,8 +1,6 @@
 @use '@shared/styles' as s;
 
 .layout {
-  @include s.page-layout;
-
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -10,6 +8,8 @@
 
   width: 100%;
   height: 100%;
+
+  @include s.page-layout;
 
 
   > nav {
@@ -23,9 +23,9 @@
 }
 
 .h1 {
-  @include s.t-h1;
-
   margin: 16px 0 32px;
+
+  @include s.t-h1;
 
   @media (min-width: s.$c-BREAKPOINT_TAB) {
     margin-bottom: 40px;

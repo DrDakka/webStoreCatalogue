@@ -53,9 +53,9 @@
     @include underscore;
   }
 
+  @include s.t-uppercase;
+
   @media (min-width: s.$c-BREAKPOINT_TAB) {
     padding: 0;
   }
-
-  @include s.t-uppercase;
 }

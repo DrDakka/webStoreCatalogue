@@ -6,11 +6,11 @@ $GAP_WIDE: 80px;
 $GRID_SPACER: 24px;
 
 .container {
-  @include s.page-layout;
-
   display: flex;
   flex-direction: column;
   gap: $GAP_MOB;
+
+  @include s.page-layout;
 
   @media (min-width: s.$c-BREAKPOINT_TAB) {
     gap: $GAP_TAB;

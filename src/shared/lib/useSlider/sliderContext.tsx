@@ -1,4 +1,4 @@
-import { createContext, ReactNode, useRef, useState } from 'react';
+import { createContext, ReactNode, useCallback, useRef, useState } from 'react';
 import { createContextHook } from '@shared/helpers/contextProvider';
 
 type SliderDataType = {
@@ -49,8 +49,8 @@ const SliderDataProvider = ({ children, startIdx }: ContextProps) => {
     index: useRef<number>(startIdx),
   };
 
-  const [tick, setTick] = useState(false);
-  const rerender = () => setTick(!tick);
+  const [, setTick] = useState(false);
+  const rerender = useCallback(() => setTick(prev => !prev), []);
 
   const data = {
     DOM: DOMRefs,

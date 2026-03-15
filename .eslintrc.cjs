@@ -10,15 +10,6 @@ module.exports = {
     'plugin:@typescript-eslint/eslint-recommended',
     'plugin:@typescript-eslint/recommended',
     'plugin:prettier/recommended',
-    'plugin:cypress/recommended',
-  ],
-  overrides: [
-    {
-      'files': ['**/*.spec.jsx'],
-      'rules': {
-        'react/jsx-filename-extension': ['off'],
-      }
-    }
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
