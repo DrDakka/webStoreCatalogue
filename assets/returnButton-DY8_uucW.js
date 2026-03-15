@@ -1,1 +1,0 @@
-import{e as r,j as t,A as o}from"./index-B8eeGiSB.js";const s={"return-button":"_return-button_kkak5_9"},a=()=>{const{goBack:n}=r();return t.jsxs("button",{className:s["return-button"],onClick:n,children:[t.jsx(o,{direction:"left"}),"Back"]})};export{a as R};
