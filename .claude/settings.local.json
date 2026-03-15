@@ -1,0 +1,25 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(find /home/drdakka/Desktop/Proj/react_phone-catalog -name *.test.* -o -name *.spec.* -o -name cypress)",
+      "Bash(wc -l /home/drdakka/Desktop/Proj/react_phone-catalog/src/**/*.tsx /home/drdakka/Desktop/Proj/react_phone-catalog/src/**/*.ts)",
+      "Bash(grep -r \"ErrorBoundary\\\\|error boundary\" /home/drdakka/Desktop/Proj/react_phone-catalog/src --include=*.tsx --include=*.ts)",
+      "Bash(grep -r \"memo\\\\|useMemo\\\\|useCallback\" /home/drdakka/Desktop/Proj/react_phone-catalog/src --include=*.tsx --include=*.ts)",
+      "Bash(ls -la /home/drdakka/Desktop/Proj/react_phone-catalog/src/.eslintrc* /home/drdakka/Desktop/Proj/react_phone-catalog/.eslintrc*)",
+      "Bash(grep -r console. /home/drdakka/Desktop/Proj/react_phone-catalog/src --include=*.tsx --include=*.ts)",
+      "Bash(grep -E \"\\\\.\\(json|js|ts|cjs\\)$\")",
+      "Bash(rsync -a --exclude='node_modules' --exclude='package-lock.json' --exclude='phoneCatSrc.zip' /home/drdakka/Desktop/Proj/react_phone-catalog/ /home/drdakka/Desktop/Proj/webStoreCatalogue/)",
+      "Bash(cp -r /home/drdakka/Desktop/Proj/react_phone-catalog /home/drdakka/Desktop/Proj/webStoreCatalogue)",
+      "Bash(rm -rf /home/drdakka/Desktop/Proj/webStoreCatalogue/node_modules)",
+      "Bash(rm -f /home/drdakka/Desktop/Proj/webStoreCatalogue/package-lock.json)",
+      "Bash(rm -f /home/drdakka/Desktop/Proj/webStoreCatalogue/phoneCatSrc.zip)",
+      "Bash(find /home/drdakka/Desktop/Proj/webStoreCatalogue/src/shared/styles -type f -name *.scss)",
+      "Bash(wc -l /home/drdakka/Desktop/Proj/webStoreCatalogue/src/**/*.tsx /home/drdakka/Desktop/Proj/webStoreCatalogue/src/**/*.ts)",
+      "Bash(npm install:*)",
+      "Bash(/home/drdakka/.nvm/versions/node/v24.13.0/bin/npm install:*)",
+      "Bash(NODE=/home/drdakka/.nvm/versions/node/v24.13.0/bin/node NPM=/home/drdakka/.nvm/versions/node/v24.13.0/bin/npm)",
+      "Bash(PATH=\"/home/drdakka/.nvm/versions/node/v24.13.0/bin:$PATH\" npm install --save-dev vitest @vitest/coverage-v8 @testing-library/react @testing-library/jest-dom @testing-library/user-event jsdom)",
+      "Bash(PATH=\"/home/drdakka/.nvm/versions/node/v24.13.0/bin:$PATH\" npx vitest run)"
+    ]
+  }
+}
